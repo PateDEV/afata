@@ -1,0 +1,354 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FinlandHosting</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <button class="menu-btn">=</button>
+        <div class="sidebar">
+            <ul>
+                <li><a href="#" onclick="changePage('etusivu')">ETUSIVU</a></li>
+                <li><a href="#" onclick="changePage('tuotteet')">TUOTTEET</a></li>
+                <li><a href="https://status.finlandhosting.net">STATUS</a></li>
+                <li><a href="https://billing.stripe.com/p/login/fZe02b1Gw6EV1na288">ASIAKAS</a></li>
+                <li><a href="https://Paneeli.finlandhosting.net">PANEELI</a></li>
+            </ul>
+        </div>
+    
+        <div class="content">
+            <!-- Main Pages -->
+            <div id="etusivu" class="page">
+                <h1>Tervetuloa FinlandHosting Nettisivulle</h1>
+                <p>Tarjoamme Asiakkaillemme Huippuluokan Palvelinsuoritustehoa Ja Erin Omaista Palvelinlaatua</p>
+                <ul>
+                    <li>🔹 Korkealaatuiset palvelimet</li>
+                    <li>🔹 Välitön käyttöönotto</li>
+                    <li>🔹 Paikallinen asiakaspalvelu</li>
+                </ul>
+            </div>
+
+            <footer>
+                Finland Hosting© 2025
+            </footer>
+    
+            <div id="tuotteet" class="page" style="display: none;">
+                <h1>TUOTTEEMME</h1>
+                <!-- Categories Section -->
+                <div class="categories">
+                    <div class="category-tab" onclick="showCategory('gameServer')">Game Server</div>
+                    <div class="category-tab" onclick="showCategory('vps')">VPS</div>
+                    <div class="category-tab" onclick="showCategory('discord')">Discord Bot</div>
+                </div>
+    
+                <!-- Game Server Categories -->
+                <div id="gameServer" class="product-category" style="display: none;">
+                    <div class="subcategory-tab" onclick="showSubCategory('minecraft')">Minecraft</div>
+                    <div class="subcategory-tab" onclick="showSubCategory('csgo')">CS2</div>
+                    <div class="subcategory-tab" onclick="showSubCategory('csgo')">CS:GO</div>
+                    <div class="subcategory-tab" onclick="showSubCategory('fivem')">FiveM</div>
+                    <div class="subcategory-tab" onclick="showSubCategory('rust')">Rust</div>
+                </div>
+
+<div id="fivem" class="product-category" style="display: none;">
+    <!-- Info Section for all FiveM Servers -->
+    <div class="fivem-info">
+        <p>Palvelimemme itsessään ei sisällä pelaajamääriä rajoittavia tekijöitä, mutta fivem määrittää, kuinka monta pelaajaa voi liittyä palvelimellesi samanaikaisesti. Voit nostaa tätä ostamalla heidän oman 
+        <a href="https://www.patreon.com/fivem" target="_blank" style="color: #a3d9ff; text-decoration: underline;">Patreon-tilauksensa</a>.</p>
+    </div>
+    <!-- FiveM Eco Plan -->
+    <div class="product fivem">
+        <h1>Eco - 2,00€/kk</h1>
+        <p>🔹 4 Gb RAM<br>🔹 30 Gb Storage<br>🔹 Unlimited usage of CPU<br>🔹 1 MySQL Database</p>      
+      <stripe-buy-button
+        buy-button-id="buy_btn_1QgnrHIkI5e3xCIFOkDcl0S3"
+        publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+      >
+      </stripe-buy-button>
+    </div>
+
+    <!-- FiveM Small Plan -->
+    <div class="product fivem">
+        <h1>Small - 5,00€/kk</h1>
+        <p>🔹 8 Gb RAM<br>🔹 70 Gb Storage<br>🔹 Unlimited usage of CPU<br>🔹 1 MySQL Database</p>
+      <stripe-buy-button
+        buy-button-id="buy_btn_1QgnrvIkI5e3xCIFIswk9kY0"
+        publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+      >
+      </stripe-buy-button>
+    </div>
+
+    <!-- FiveM Normal Plan -->
+    <div class="product fivem">
+
+        <h1>Normal - 7,50/kk</h1>
+        <p>🔹 10 Gb RAM<br>🔹 100 Gb Storage<br>🔹 Unlimited usage of CPU<br>🔹 1 MySQL Database</p>
+ 
+      <stripe-buy-button
+        buy-button-id="buy_btn_1QgnsmIkI5e3xCIFRxb9bM1f"
+        publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+      >
+      </stripe-buy-button>
+    </div>
+
+    <!-- FiveM Power Plan -->
+    <div class="product fivem">
+        <h1>Power - 10,00€/kk</h1>
+        <p>🔹 16 Gb RAM<br>🔹 150 Gb Storage<br>🔹 Unlimited usage of CPU<br>🔹 2 MySQL Databases</p>
+ 
+      <stripe-buy-button
+        buy-button-id="buy_btn_1QgnsmIkI5e3xCIFRxb9bM1f"
+        publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+      >
+      </stripe-buy-button>
+    </div>
+
+    <!-- FiveM Power+ Plan -->
+    <div class="product fivem">
+        <h1>Power+ - 17,50/kk</h1>
+        <p>🔹 32 Gb RAM<br>🔹 250 Gb Storage<br>🔹 Unlimited usage of CPU<br>🔹 5 MySQL Databases</p>
+ 
+      <stripe-buy-button
+        buy-button-id="buy_btn_1QgnucIkI5e3xCIFyhJ9akRi"
+        publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+      >
+      </stripe-buy-button>
+    </div>
+</div>
+
+<div id="rust" class="product-category" style="display: none;">
+    <!-- rust Small Plan -->
+    <div class="product rust">
+        <h1>Small - 5,00€/kk</h1>
+        <p>🔹 8 Gb RAM<br>🔹 40 Gb Storage<br>🔹 Unlimited usage of CPU<br>🔹 1 MySQL Database</p>
+ 
+      <stripe-buy-button
+        buy-button-id="buy_btn_1QgnkiIkI5e3xCIFDOwtB38C"
+        publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+      >
+      </stripe-buy-button>
+    </div>
+    <!-- rust Power Plan -->
+    <div class="product rust">
+        <h1>Power - 10,00€/kk</h1>
+        <p>🔹 12 Gb RAM<br>🔹 70 Gb Storage<br>🔹 Unlimited usage of CPU<br>🔹 2 MySQL Databases</p>
+ 
+      <stripe-buy-button
+        buy-button-id="buy_btn_1QgnmrIkI5e3xCIFHvo0wGE2"
+        publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+      >
+      </stripe-buy-button>
+    </div>
+
+    <!-- rust Power+ Plan -->
+    <div class="product rust">
+        <h1>Power+ - 15,00/kk</h1>
+        <p>🔹 16 Gb RAM<br>🔹 80 Gb Storage<br>🔹 Unlimited usage of CPU<br>🔹 5 MySQL Databases</p>
+ 
+      <stripe-buy-button
+        buy-button-id="buy_btn_1QgnoiIkI5e3xCIF34IdlaVc"
+        publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+      >
+      </stripe-buy-button>
+    </div>
+</div>
+
+
+<!-- Minecraft Servers -->
+<div id="minecraft" class="product-category" style="display: none;">
+    <div class="product minecraft">
+        <h1>Eco - 2,00€/kk</h1>
+        <p>🔹 4 Gb RAM<br>🔹 30 Gb Storage<br>🔹 Unlimited usage of CPU<br>🔹 1 MySQL Database</p>
+ 
+      <stripe-buy-button
+        buy-button-id="buy_btn_1Qgo1ZIkI5e3xCIFWH8efwcE"
+        publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+      >
+      </stripe-buy-button>
+    </div>
+    <div class="product minecraft">
+        <h1>Normal - 7,00/kk</h1>
+        <p>🔹 10 Gb RAM<br>🔹 100 Gb Storage<br>🔹 Unlimited usage of CPU<br>🔹 1 MySQL Database</p>
+ 
+      <stripe-buy-button
+        buy-button-id="buy_btn_1Qgo2HIkI5e3xCIFBOIvBB0o"
+        publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+      >
+      </stripe-buy-button>
+    </div>
+
+    <!-- minecraft Power Plan -->
+    <div class="product minecraft">
+        <h1>Power - 10,00€/kk</h1>
+        <p>🔹 16 Gb RAM<br>🔹 150 Gb Storage<br>🔹 Unlimited usage of CPU<br>🔹 2 MySQL Databases</p>
+ 
+      <stripe-buy-button
+        buy-button-id="buy_btn_1Qgo37IkI5e3xCIFO76w63rJ"
+        publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+      >
+      </stripe-buy-button>
+    </div>
+
+    <!-- minecraft Power+ Plan -->
+    <div class="product minecraft">
+        <h1>Power+ - 18,00/kk</h1>
+        <p>🔹 32 Gb RAM<br>🔹 250 Gb Storage<br>🔹 Unlimited usage of CPU<br>🔹 5 MySQL Databases</p>
+ 
+      <stripe-buy-button
+        buy-button-id="buy_btn_1Qgo3zIkI5e3xCIFuJ2TX4Us"
+        publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+      >
+      </stripe-buy-button>
+    </div>
+</div>
+
+<!-- CS:GO Servers -->
+<div id="csgo" class="product-category" style="display: none;">
+    <div class="product">
+        <h1>Eco - 2,00/kk</h1>
+        <p>🔹 4 Gb RAM<br>🔹 30 Gb Storage<br>🔹 Unlimited usage of CPU<br>🔹 1 MySQL Databases</p>
+ 
+      <stripe-buy-button
+        buy-button-id="buy_btn_1Qgo7HIkI5e3xCIFfr7WSxzN"
+        publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+      >
+      </stripe-buy-button>
+    </div>
+    <div class="product">
+        <h1>Normal - 5,00/kk</h1>
+        <p>🔹 8 Gb RAM<br>🔹 70 Gb Storage<br>🔹 Unlimited usage of CPU<br>🔹 1 MySQL Databases</p>
+ 
+      <stripe-buy-button
+        buy-button-id="buy_btn_1QgoFZIkI5e3xCIFymHpD9cN"
+        publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+      >
+      </stripe-buy-button>
+</div>
+<div class="product">
+    <h1>Power - 10,00/kk</h1>
+    <p>🔹 12 Gb RAM<br>🔹 100 Gb Storage<br>🔹 Unlimited usage of CPU<br>🔹 2 MySQL Databases</p>
+    <script async
+    src="https://js.stripe.com/v3/buy-button.js">
+  </script>
+  
+  <stripe-buy-button
+    buy-button-id="buy_btn_1QgoHdIkI5e3xCIF5BNeL415"
+    publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+  >
+  </stripe-buy-button>
+</div>
+<div class="product">
+    <h1>Power+ - 15,00/kk</h1>
+    <p>🔹 16 Gb RAM<br>🔹 125 Gb Storage<br>🔹 Unlimited usage of CPU<br>🔹 2 MySQL Databases</p>
+    <script async
+    src="https://js.stripe.com/v3/buy-button.js">
+  </script>
+  
+  <stripe-buy-button
+    buy-button-id="buy_btn_1QgoIUIkI5e3xCIFJdo14589"
+    publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+  >
+  </stripe-buy-button>
+</div>
+<div id="discord" class="product-category" style="display: none;">
+
+    <div class="product discord">
+        <h1>JavaScript  - 0,50€/kk</h1>
+        <p>🔹 4 Gb RAM<br>🔹 15 Gb Storage<br>🔹 Unlimited usage of CPU<br>🔹 1 MySQL Database</p>
+ 
+      <stripe-buy-button
+        buy-button-id="buy_btn_1QgnXlIkI5e3xCIF7vJzPzqD"
+        publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+      >
+      </stripe-buy-button>
+    </div>
+
+    <div class="product discord">
+        <h1>Python - 0,50/kk</h1>
+        <p>🔹 4 Gb RAM<br>🔹 15 Gb Storage<br>🔹 Unlimited usage of CPU<br>🔹 1 MySQL Database</p>
+ 
+      <stripe-buy-button
+        buy-button-id="buy_btn_1QgnTAIkI5e3xCIFQF5uQkui"
+        publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+      >
+      </stripe-buy-button>
+    </div>
+</div>
+
+<div id="vps" class="product-category" style="display: none;">
+    <!-- Eco Plan -->
+    <div class="product vps">
+        <h1>Eco - 7,00€/kk</h1>
+        <p>🔹 4 Gb RAM<br>🔹 50 Gb Storage<br>🔹 2 vCPU<br>🔹 Location: Finland Lempäälä</p>
+ 
+      <stripe-buy-button
+        buy-button-id="buy_btn_1Qgmn9IkI5e3xCIFncEauRbK"
+        publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+      >
+      </stripe-buy-button>
+    </div>
+
+    <!-- Small Plan -->
+    <div class="product vps">
+        <h1>Small - 10,00€/kk</h1>
+        <p>🔹 6 Gb RAM<br>🔹 75 Gb Storage<br>🔹 4 vCPU<br>🔹 Location: Finland Lempäälä</p>
+ 
+      <stripe-buy-button
+        buy-button-id="buy_btn_1Qgmr8IkI5e3xCIFAzD0o2hF"
+        publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+      >
+      </stripe-buy-button>
+    </div>
+
+    <!-- Normal Plan -->
+    <div class="product vps">
+        <h1>Normal - 15,00€/kk</h1>
+        <p>🔹 12 Gb RAM<br>🔹 100 Gb Storage<br>🔹 6 vCPU<br>🔹 Location: Finland Lempäälä</p>
+ 
+      <stripe-buy-button
+        buy-button-id="buy_btn_1QgmsuIkI5e3xCIF4Wzl7AXb"
+        publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+      >
+      </stripe-buy-button>
+    </div>
+
+    <!-- Power Plan -->
+    <div class="product vps">
+        <h1>Power - 25,00€/kk</h1>
+        <p>🔹 24 Gb RAM<br>🔹 150 Gb Storage<br>🔹 8 vCPU<br>🔹 Location: Finland Lempäälä</p>
+ 
+      <stripe-buy-button
+        buy-button-id="buy_btn_1QgmtuIkI5e3xCIFrSeo9ji9"
+        publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+      >
+      </stripe-buy-button>
+    </div>
+
+    <!-- Power+ Plan -->
+    <div class="product vps">
+        <h1>Power+ - 30,00€/kk</h1>
+        <p>🔹 28 Gb RAM<br>🔹 200 Gb Storage<br>🔹 10 vCPU<br>🔹 Location: Finland Lempäälä</p>
+ 
+      <stripe-buy-button
+        buy-button-id="buy_btn_1QgmuUIkI5e3xCIFgVKxG9t2"
+        publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+      >
+      </stripe-buy-button>
+    </div>
+
+    <!-- Unlimited Plan -->
+    <div class="product vps">
+        <h1>Unlimited - 60,00€/kk</h1>
+        <p>🔹 64 Gb RAM<br>🔹 300 Gb Storage<br>🔹 12 vCPU<br>🔹 Location: Finland Lempäälä</p>
+ 
+      <stripe-buy-button
+        buy-button-id="buy_btn_1Qgmv6IkI5e3xCIFJsDHOKm8"
+        publishable-key="pk_live_51QgWkxIkI5e3xCIF8mK7ZYubMGPTAFP4lNKFJ08UsZJZgKEiqSnOgVyMIY1y9ygEzj09JmEDbdmUWC63auLjP15H00ww0ufiZU"
+      >
+      </stripe-buy-button>
+    </div>
+</div>
